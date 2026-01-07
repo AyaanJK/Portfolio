@@ -42,30 +42,7 @@ body {
     position: relative;
 }
 
-/* Cyberpunk scanline effect */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.15),
-        rgba(0, 0, 0, 0.15) 1px,
-        transparent 1px,
-        transparent 2px
-    );
-    z-index: 9999;
-    animation: scanlines 8s linear infinite;
-}
 
-@keyframes scanlines {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(10px); }
-}
 
 /* Typography */
 .display-large {
@@ -238,15 +215,31 @@ nav {
 }
 
 .hero-text h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     color: var(--text-primary);
     padding-bottom: 0.2em;
     white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden; /* Hide any overflow */
-    text-overflow: ellipsis; /* Add ... if text is cut off */
+    overflow: visible; /* Allow content to show */
     font-size: clamp(2rem, 8vw, 5rem); /* Responsive font scaling */
     line-height: 1.1; /* Tighter line height */
     max-width: 100%; /* Ensure it stays within container */
+    min-height: calc(1.1em + 0.2em + 0.5rem);
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+    display: inline-block;
+    background-color: var(--text-accent);
+    color: transparent;
+    width: 3px;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+    font-weight: 400;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
 }
 
 .cyber-prefix {
@@ -257,13 +250,14 @@ nav {
 
 .hero-text p {
     color: var(--text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    min-height: calc(1.6em + 1.5rem);
 }
 
 .hero-buttons {
     display: flex;
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     flex-wrap: wrap;
     justify-content: centre; /* Centre align buttons */
 }
@@ -1025,6 +1019,8 @@ footer p {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    position: relative;
+    z-index: 2001;
 }
 
 .mobile-menu span {
@@ -1156,26 +1152,23 @@ footer p {
 
     .nav-links {
         position: fixed;
-        top: 49px;
+        top: 0;
         left: 0;
-        height: calc(100vh - 49px);
+        height: 100vh;
         width: 80vw;
         max-width: 340px;
-        background: rgba(255,255,255,0.95);
+        background: rgba(10, 10, 15, 0.98);
         backdrop-filter: saturate(180%) blur(20px);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         flex-direction: column;
-        padding: 48px 24px 40px 24px;
+        padding: 80px 24px 40px 24px;
         gap: 32px;
         transform: translateX(-100vw);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         border-right: 1px solid var(--border);
         border-bottom: none;
         z-index: 2000;
-        box-shadow: 2px 0 16px rgba(0,0,0,0.08);
-    }
-    [data-theme="dark"] .nav-links {
-        background: rgba(29,29,31,0.95);
+        box-shadow: 2px 0 16px rgba(252, 238, 10, 0.15);
     }
 
     .nav-links.active {
