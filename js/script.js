@@ -1,22 +1,8 @@
 // Typing animation for hero section
 document.addEventListener('DOMContentLoaded', () => {
-    const typedNameElement = document.getElementById('typed-name');
     const typedTextElement = document.getElementById('typed-text');
-    const nameText = "Hi, I'm Ayaan";
     const subtitleText = "Aspiring Software Engineer & A-Level Student";
-    let nameIndex = 0;
     let subtitleIndex = 0;
-    
-    function typeName() {
-        if (nameIndex < nameText.length) {
-            typedNameElement.textContent += nameText.charAt(nameIndex);
-            nameIndex++;
-            setTimeout(typeName, 100);
-        } else {
-            // Start typing subtitle after name is complete
-            setTimeout(typeSubtitle, 300);
-        }
-    }
     
     function typeSubtitle() {
         if (subtitleIndex < subtitleText.length) {
@@ -26,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Start typing name after a short delay
-    setTimeout(typeName, 500);
+    // Start typing subtitle after a short delay
+    setTimeout(typeSubtitle, 500);
 });
 
 // Mobile menu toggle
