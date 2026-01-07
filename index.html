@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayaan Jaman-Khan - Portfolio</title>
     <link rel="icon" href="imgs/favicon/AJK.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,27 +18,13 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://medium.com/@ayn.jk" target="_blank">Blog</a></li>
             </ul>
-            <div style="display: flex; align-items: center; gap: 16px;">
-                <div class="mobile-menu" id="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="theme-toggle" id="theme-toggle">
-                    <svg class="sun-icon" viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="5"/>
-                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                    </svg>
-                    <div class="toggle-slider"></div>
-                    <svg class="moon-icon" viewBox="0 0 24 24">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -46,7 +35,7 @@
             <div class="hero-grid">
                 <div class="hero-text">
                     <h1 class="display-large">Ayaan Jaman-Khan</h1>
-                    <p class="body-large">Aspiring Cybersecurity Specialist & A-Level Student</p>
+                    <p class="body-large">Aspiring Software Engineer & A-Level Student</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="https://medium.com/@ayn.jk" target="_blank" class="btn btn-secondary">Read My Blog</a>
@@ -198,245 +187,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="display-small">Education</h2>
-                <p class="body-large">My academic journey and achievements</p>
-            </div>
-            <div class="education-timeline">
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-card">
-                        <div class="education-date">Sep 2024 – Present</div>
-                        <h3 class="headline education-title">A-Levels</h3>
-                        <p class="body education-institution">Chadwell Heath Academy</p>
-                        <p class="body education-description">Currently studying Mathematics, Physics, and Economics at A-Level.</p>
-                    </div>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-card">
-                        <div class="education-date">Sep 2022 – July 2024</div>
-                        <h3 class="headline education-title">GCSEs</h3>
-                        <p class="body education-institution">Chadwell Heath Academy</p>
-                        <p class="body education-description">Achieved grades 8-6 across all subjects including Mathematics (7), English (7), and Double Science (8-8).</p>
-                    </div>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-card">
-                        <div class="education-date">Sep 2021 - July 2022</div>
-                        <h3 class="headline education-title">FCSE</h3>
-                        <p class="body education-institution">Chadwell Heath Academy</p>
-                        <p class="body education-description">Achieved Distinction in French.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="display-small">Experience</h2>
-                <p class="body-large">Professional, academic, and extracurricular experiences</p>
-            </div>
-            <h3 class="headline" style="margin-bottom: 24px;">Work Experience</h3>
-            <div style="position: relative;">
-    <button class="timeline-scroll-btn left" id="exp-scroll-left" aria-label="Scroll left"><span class="chevron"><svg viewBox="0 0 18 18"><polyline points="12 4 6 9 12 14"/></svg></span></button>
-                <div class="experience-timeline" id="exp-timeline-work">
-                    <div class="experience-group">
-                        <!-- Sorted by newest first (left to right) -->
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">July 2025</span>
-                            </div>
-                            <div class="experience-role">PwC – Intern</div>
-                            <ul class="experience-details">
-                                <li>Applied problem-solving skills to real-world scenarios through "Give it a Go" sessions for Audit, Consulting, and Tax.</li>
-                                <li>Collaborated with 4 other people on a creative project, strengthening my inter-personal, teamwork and communication skills.</li>
-                                <li>Gained insight into how technology such as AI is applied to traditional service lines like Audit and Tax.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">July 2025</span>
-                            </div>
-                            <div class="experience-role">Accenture – DevOps Engineer Intern</div>
-                            <ul class="experience-details">
-                                <li>Developed SDLC understanding focused on DevOps automation and deployment, strengthening research and independent learning skills.</li>
-                                <li>Created a PowerPoint presentation comparing Waterfall vs Agile methodologies, enhancing analytical thinking and presentation abilities.</li>
-                                <li>Designed an algorithm with pseudocode and debugged Python program by resolving 8+ syntax and logic errors.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">On-site</span>
-                                <span class="experience-date">July 2025</span>
-                            </div>
-                            <div class="experience-role">Bloomberg – Intern</div>
-                            <ul class="experience-details">
-                                <li>Collaborated to research a company using Bloomberg Terminal and presented findings, building teamwork and presentation skills.</li>
-                                <li>Participated in mock interviews and CV optimisation, enhancing communication and self-presentation abilities.</li>
-                                <li>Explored company culture via apprentice panels and office tours, strengthening networking and relationship-building skills.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">Feb 2025</span>
-                            </div>
-                            <div class="experience-role">Valcon – Software Engineer Intern</div>
-                            <ul class="experience-details">
-                                <li>Designed and built an AI chatbot to enhance passenger experience at Heathrow Airport.</li>
-                                <li>Collaborated with a 5-person development team, strengthening teamwork and communication skills.</li>
-                                <li>Presented chatbot prototype to stakeholders, developing confidence and presentation abilities.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">Feb 2025</span>
-                            </div>
-                            <div class="experience-role">Direct Line Group – Automation Engineer Intern</div>
-                            <ul class="experience-details">
-                                <li>Assessed 10 claims for automation suitability, improving decision-making and analytical thinking.</li>
-                                <li>Gained insight into ethical AI and cybersecurity risks in claims processing, developing critical reasoning and professional judgement.</li>
-                                <li>Developed understanding of AI ethics and risk management.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">Nov 2024</span>
-                            </div>
-                            <div class="experience-role">Skyscanner – Software Engineer Intern</div>
-                            <ul class="experience-details">
-                                <li>Built web applications and microservices, demonstrating project management and organisational skills.</li>
-                                <li>Developed Android application for flight itineraries, showcasing attention to detail and quality focus.</li>
-                                <li>Enhanced problem-solving abilities through user centred design challenges.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">Nov 2024</span>
-                            </div>
-                            <div class="experience-role">Goldman Sachs – Software Engineer Intern</div>
-                            <ul class="experience-details">
-                                <li>Evaluated security vulnerabilities, identifying critical weaknesses in 15% of cases, strengthening analytical thinking and systematic thinking.</li>
-                                <li>Analysed hashing algorithms, developing logical reasoning and independent learning skills.</li>
-                                <li>Gained practical knowledge of cyber security policies and data protection strategies.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Remote</span>
-                                <span class="experience-date">Nov 2024</span>
-                            </div>
-                            <div class="experience-role">Fujitsu – Cybersecurity Specialist Intern</div>
-                            <ul class="experience-details">
-                                <li>Identified cybersecurity threats, enhancing critical thinking and risk assessment abilities.</li>
-                                <li>Designed an incident response plan, reducing average response time by 40%, enhancing strategic thinking and proactive thinking skills.</li>
-                                <li>Strengthened resilience and adaptability when managing complex challenges.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">On-site</span>
-                                <span class="experience-date">Aug 2024</span>
-                            </div>
-                            <div class="experience-role">East London Mosque – Volunteer</div>
-                            <ul class="experience-details">
-                                <li>Designed marketing graphics, improving digital content creation and UI design skills.</li>
-                                <li>Assisted the media team, strengthening communication and teamwork.</li>
-                                <li>Created a Google form for feedback, honing data collection, structuring, and analysis skills.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">On-site</span>
-                                <span class="experience-date">June 2024</span>
-                            </div>
-                            <div class="experience-role">Regent Tyres & Exhausts Ltd – Workshop Assistant</div>
-                            <ul class="experience-details">
-                                <li>Managed inventory, improving data organisation and attention to detail.</li>
-                                <li>Diagnosed vehicle faults, strengthening analytical thinking and problem-solving.</li>
-                                <li>Operated machinery safely, developing precision, technical skills, and ability to follow procedures.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    <button class="timeline-scroll-btn right" id="exp-scroll-right" aria-label="Scroll right"><span class="chevron"><svg viewBox="0 0 18 18"><polyline points="6 4 12 9 6 14"/></svg></span></button>
-            </div>
-            <h3 class="headline" style="margin: 48px 0 24px 0;">Additional Experience</h3>
-            <div style="position: relative;">
-    <button class="timeline-scroll-btn left" id="exp-scroll-left-add" aria-label="Scroll left"><span class="chevron"><svg viewBox="0 0 18 18"><polyline points="12 4 6 9 12 14"/></svg></span></button>
-                <div class="experience-timeline" id="exp-timeline-additional">
-                    <div class="experience-group">
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">MOOC</span>
-                                <span class="experience-date">June 2025 – Present</span>
-                            </div>
-                            <div class="experience-role">Python Programming MOOC 2025 – University of Helsinki</div>
-                            <ul class="experience-details">
-                                <li>Currently deepening Python programming expertise, focusing on advanced data structures and algorithms.</li>
-                                <li>Actively applying object-oriented principles to solve complex problems and build scalable applications.</li>
-                                <li>Engaging with efficient coding practices and real-world project challenges to enhance practical development skills.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">MOOC</span>
-                                <span class="experience-date">Jan 2025 – Feb 2025</span>
-                            </div>
-                            <div class="experience-role">Introduction to Programming Using Python MOOC – University of Leeds</div>
-                            <ul class="experience-details">
-                                <li>Developed Python skills, improving problem-solving, logical thinking, and coding proficiency.</li>
-                                <li>Applied programming concepts to solve real-world problems and build simple applications.</li>
-                                <li>Explored ethical considerations in software development, such as privacy, security, and societal impact.</li>
-                            </ul>
-                        </div>
-                        <div class="experience-item">
-                            <div class="experience-marker"></div>
-                            <div class="experience-meta">
-                                <span class="experience-type">Extracurricular</span>
-                                <span class="experience-date">Sep 2022 – July 2024</span>
-                            </div>
-                            <div class="experience-role">Sports Leader Level 3 – Leadership Skills Foundation</div>
-                            <ul class="experience-details">
-                                <li>Planned and delivered 60+ hours of community coaching, developing leadership, organisation and communication skills.</li>
-                                <li>Demonstrated ability to independently lead groups in sports activities, enhancing teamwork and interpersonal abilities.</li>
-                                <li>Gained nationally recognised qualification worth 16 UCAS points, showcasing commitment to personal development.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    <button class="timeline-scroll-btn right" id="exp-scroll-right-add" aria-label="Scroll right"><span class="chevron"><svg viewBox="0 0 18 18"><polyline points="6 4 12 9 6 14"/></svg></span></button>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
@@ -508,7 +258,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p class="body">&copy; 2025 Ayaan Jaman-Khan. All rights reserved.</p>
+            <p class="body">&copy; 2026 Ayaan Jaman-Khan. All rights reserved.</p>
         </div>
     </footer>
 
